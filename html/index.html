@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book My Show</title>
+    <style>
+        html, body{
+            margin: 0;
+            height: 99.5%;
+        }
+        div {
+            border: solid 2px black;
+            font-size: 40px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .header {
+            height: 25%;
+        }
+        .footer {
+            height: 25%;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .menu {
+            width: 20%;
+        }
+        .page {
+            display: flex;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            .menu {
+                width: 100%;
+            }
+            .content {
+                flex-direction: column;
+            }
+            .page {
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="flex-container">
+    <div class="header">header</div>
+    <div class="content">
+        <div class="menu">menu</div>
+        <div class="page">page</div>
+    </div>
+    <div class="footer">footer</div>
+</div>
+</body>
+
+</html>
